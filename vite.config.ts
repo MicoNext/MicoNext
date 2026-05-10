@@ -4,7 +4,7 @@ import tailwindcss from '@tailwindcss/vite'
 
 export default defineConfig({
   plugins: [react(),tailwindcss()],
-  base: '/offer/',
+  base: '/miconext/',
   build: {
     outDir: './build',
     emptyOutDir: true
