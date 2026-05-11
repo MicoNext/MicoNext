@@ -15,6 +15,7 @@ interface ContactCardProps {
   contact: {
     url: string
     platform: string
+    platformName: string
     status: string
     description: string
     label: string
@@ -116,7 +117,7 @@ function ContactCard({ contact, config }: ContactCardProps) {
       <div className="flex-1 min-w-0">
         <div className="flex flex-col sm:flex-row sm:items-center gap-2 sm:gap-4 mb-3">
           <h3 className="text-lg sm:text-xl font-semibold text-white">
-            {contact.platform}
+            {contact.platformName}
           </h3>
           <span className={`
             self-start inline-flex items-center gap-1.5 px-3 py-1 rounded-full 

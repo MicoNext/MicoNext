@@ -178,6 +178,7 @@ export const siteData = {
     items: [
       {
         platform: "Telegram",
+        platformName: "Telegram",
         label: "@dev_okmic",
         url: "https://t.me/dev_okmic",
         icon: "Telegram",
@@ -186,6 +187,7 @@ export const siteData = {
       },
       {
         platform: "Max",
+        platformName: "Max",
         label: "+7 918 466 5096",
         url: "https://max.ru/u/f9LHodD0cOJmwq4CSauqNaa8RqiSw930HGhG7EZEhHXs4aAL26zHZyqMua4",
         icon: "Max",
@@ -193,7 +195,9 @@ export const siteData = {
         description: "Пишите или звоните",
       },
       {
-        platform: "Почта",
+        
+        platform: "Email",
+        platformName: "Почта",
         label: "MicoNext@yandex.ru",
         url: "mailto:MicoNext@yandex.ru",
         icon: "Email",
@@ -201,7 +205,8 @@ export const siteData = {
         status: "Проверяем часто"
       },
       {
-        platform: "Телефон",
+        platform: "Phone",
+        platformName: "Телефон",
         label: "+7 918 466 50 96",
         url: "tel:79184665096",
         icon: "Phone",
