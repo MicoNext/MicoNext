@@ -112,7 +112,7 @@ export const siteData = {
     },
     categories: [
       {
-        category: "Backend Engineering",
+        category: "Backend",
         level: "Эксперты",
         skills: [
           { name: "Node.js", level: 95 },
@@ -142,7 +142,7 @@ export const siteData = {
         ]
       },
       {
-        category: "Хранение и очереди",
+        category: "Очереди",
         level: "Эксперты",
         skills: [
           { name: "MySQL", level: 90 },
@@ -161,7 +161,6 @@ export const siteData = {
       subTitle3: "От идеи до продакшена и поддержки",
     }
   },
-
   contacts: {
     title: "СТАРТ РАБОТЫ",
     title1: "ОБСУДИМ ВАШ ПРОЕКТ?",
