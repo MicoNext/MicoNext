@@ -193,7 +193,7 @@ export const siteData = {
         description: "Пишите или звоните",
       },
       {
-        platform: "Email",
+        platform: "Почта",
         label: "MicoNext@yandex.ru",
         url: "mailto:MicoNext@yandex.ru",
         icon: "Email",
@@ -201,7 +201,7 @@ export const siteData = {
         status: "Проверяем часто"
       },
       {
-        platform: "Phone",
+        platform: "Телефон",
         label: "+7 918 466 50 96",
         url: "tel:79184665096",
         icon: "Phone",
