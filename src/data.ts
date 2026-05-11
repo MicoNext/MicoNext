@@ -186,21 +186,29 @@ export const siteData = {
         description: "Лучший способ для быстрого старта",
       },
       {
-        platform: "WhatsApp",
+        platform: "Max",
         label: "+7 918 466 5096",
-        url: "https://wa.me/79184665096",
-        icon: "WhatsApp",
+        url: "https://max.ru/u/f9LHodD0cOJmwq4CSauqNaa8RqiSw930HGhG7EZEhHXs4aAL26zHZyqMua4",
+        icon: "Max",
         status: "Доступен",
         description: "Пишите или звоните",
       },
       {
         platform: "Email",
-        label: "okmic.dev@gmail.com",
-        url: "mailto:okmic.dev@gmail.com",
+        label: "MicoNext@yandex.ru",
+        url: "mailto:MicoNext@yandex.ru",
         icon: "Email",
         description: "Для подробного ТЗ и документов",
         status: "Проверяю часто"
-      }
+      },
+      {
+        platform: "Phone",
+        label: "+7 918 466 50 96",
+        url: "tel:79184665096",
+        icon: "Phone",
+        description: "Проверка статуса и быстрые консультации",
+        status: "Доступен"
+      },
     ]
   }
 }

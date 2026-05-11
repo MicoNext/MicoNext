@@ -1,11 +1,12 @@
 import { siteData } from '../../data'
 import { Mail, ArrowUpRight } from 'lucide-react'
-import { FaTelegram, FaWhatsapp } from 'react-icons/fa'
+import { FaTelegram, FaPhone } from 'react-icons/fa'
+import MaxIcon from '../Icons/MaxIcon'
 
-type AccentColor = 'blue' | 'emerald' | 'violet'
+type AccentColor = 'blue' | 'emerald' | 'violet' | 'orange'
 
 interface ContactConfig {
-  icon: typeof FaTelegram | typeof FaWhatsapp | typeof Mail
+  icon: typeof FaTelegram | typeof MaxIcon | typeof Mail | typeof FaPhone
   gradient: string
   accent: AccentColor
 }
@@ -36,14 +37,19 @@ const CONTACT_CARDS: ContactConfig[] = [
     accent: 'blue',
   },
   {
-    icon: FaWhatsapp,
-    gradient: 'from-emerald-500 to-green-400',
-    accent: 'emerald',
+    icon: MaxIcon,
+    gradient: 'from-violet-500 to-purple-400',
+    accent: 'violet',
   },
   {
     icon: Mail,
-    gradient: 'from-violet-500 to-purple-400',
-    accent: 'violet',
+    gradient: 'from-orange-500 to-amber-400', 
+    accent: 'orange',
+  },
+  {
+    icon: FaPhone,
+    gradient: 'from-emerald-500 to-green-400', 
+    accent: 'emerald',
   },
 ]
 
@@ -75,9 +81,16 @@ const accentColors: Record<AccentColor, {
     link: 'text-violet-400',
     border: 'border-violet-500/20 hover:border-violet-500/40',
   },
+  orange: {
+    badge: 'bg-orange-500/10 text-orange-400 border-orange-500/20',
+    icon: 'bg-orange-500/10 text-orange-400',
+    dot: 'bg-orange-400',
+    link: 'text-orange-400',
+    border: 'border-orange-500/20 hover:border-orange-500/40',
+  },
 }
 
-function ContactCard({ contact, config, isLast }: ContactCardProps) {
+function ContactCard({ contact, config }: ContactCardProps) {
   const Icon = config.icon
   const colors = accentColors[config.accent]
 
@@ -91,7 +104,6 @@ function ContactCard({ contact, config, isLast }: ContactCardProps) {
         p-6 sm:p-8 rounded-2xl border bg-gray-950/80 backdrop-blur-sm
         transition-colors duration-200
         ${colors.border}
-        ${isLast ? 'lg:col-span-2' : ''}
       `}
     >
       <div className={`
@@ -136,6 +148,7 @@ function FeatureCard({ icon: Icon, title, description, accent }: FeatureCardProp
     blue: 'text-blue-400',
     emerald: 'text-emerald-400',
     violet: 'text-violet-400',
+    orange: 'text-orange-400',
   }
 
   return (
@@ -157,7 +170,7 @@ export default function Contact() {
   const items = CONTACT_CARDS.map((config, index) => ({
     ...config,
     contact: contacts.items.find(item =>
-      item.platform === (index === 0 ? 'Telegram' : index === 1 ? 'WhatsApp' : 'Email')
+      item.platform === (index === 0 ? 'Telegram' : index === 1 ? 'Max' : index === 2 ? 'Email' : 'Phone')
     ),
   }))
 
@@ -184,12 +197,13 @@ export default function Contact() {
 
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-4 sm:gap-5 mb-16 sm:mb-20">
           {items.map((item, index) => (
-            <ContactCard
-              key={index}
-              contact={item.contact!}
-              config={item}
-              isLast={index === items.length - 1}
-            />
+            item.contact && (
+              <ContactCard
+                key={index}
+                contact={item.contact}
+                config={item}
+              />
+            )
           ))}
         </div>
 
