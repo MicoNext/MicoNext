@@ -132,7 +132,7 @@ export const siteData = {
         ]
       },
       {
-        category: "DevOps & Инфраструктура",
+        category: "Инфраструктура",
         level: "Эксперты",
         skills: [
           { name: "Docker", level: 90 },
@@ -199,7 +199,7 @@ export const siteData = {
         url: "mailto:MicoNext@yandex.ru",
         icon: "Email",
         description: "Для подробного ТЗ и документов",
-        status: "Проверяю часто"
+        status: "Проверяем часто"
       },
       {
         platform: "Phone",
