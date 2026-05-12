@@ -42,7 +42,7 @@ export default function Skills() {
             const CategoryIcon = getCategoryIcon(category.category)
             const gradient = "from-purple-600 to-blue-600"
             return (
-              <div key={index} className="bg-gray-900/50 rounded-2xl p-6 border border-gray-700/30 backdrop-blur-sm">
+              <div key={index} className="sm:min-w-[90vw] md:min-w-[80vw] lg:min-w-[500px] bg-gray-900/50 rounded-2xl p-6 border border-gray-700/30 backdrop-blur-sm">
                 <div className="flex items-center justify-between mb-6">
                   <div className="flex items-center gap-3">
                     <div className={`p-2 bg-gradient-to-r ${gradient} rounded-lg`}>
