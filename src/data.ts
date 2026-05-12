@@ -122,12 +122,12 @@ export const siteData = {
         ]
       },
       {
-        category: "Frontend & Дизайн",
+        category: "Frontend",
         level: "Эксперты",
         skills: [
           { name: "Route map", level: 90 },
-          { name: "UI", level: 85 },
-          { name: "UX", level: 82 },
+          { name: "Дизайн", level: 85 },
+          { name: "UI/UX", level: 82 },
           { name: "Быстрая работа", level: 90 },
         ]
       },

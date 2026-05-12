@@ -14,10 +14,6 @@ export default function LoadingScreen({ onClick, isExiting }: { onClick: () => v
                 <div className="logo-symbol">M</div>
             </div>
         </div>
-
-        <div className="typography">
-            <div className="brand-name">MicoNext</div>
-        </div>
     </div>
     </div>
 }
