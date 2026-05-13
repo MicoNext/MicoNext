@@ -179,8 +179,8 @@ export const siteData = {
       {
         platform: "Telegram",
         platformName: "Telegram",
-        label: "@dev_okmic",
-        url: "https://t.me/dev_okmic",
+        label: "@MicoNext",
+        url: "https://t.me/MicoNext",
         icon: "Telegram",
         status: "Онлайн",
         description: "Лучший способ для быстрого старта",
@@ -188,7 +188,7 @@ export const siteData = {
       {
         platform: "Max",
         platformName: "Max",
-        label: "+7 918 466 5096",
+        label: "@MicoNext",
         url: "https://max.ru/u/f9LHodD0cOJmwq4CSauqNaa8RqiSw930HGhG7EZEhHXs4aAL26zHZyqMua4",
         icon: "Max",
         status: "Доступен",
@@ -207,7 +207,7 @@ export const siteData = {
       {
         platform: "Phone",
         platformName: "Телефон",
-        label: "+7 918 466 50 96",
+        label: "+7 (918) 716 69 17",
         url: "tel:79184665096",
         icon: "Phone",
         description: "Проверка статуса и быстрые консультации",
